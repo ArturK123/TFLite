@@ -70,6 +70,9 @@ now you should be able to just type, and a new window should open
 labelimg
 ```
 Click on the open dir button
+<p align="left">
+  <img src="">
+</p>
 
 
 # Converting TensorFlow Models to TensorFlow Lite
