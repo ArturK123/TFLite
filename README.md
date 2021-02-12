@@ -5,7 +5,7 @@ install the TF object detection library
 ```
 git clone https://github.com/tensorflow/models.git
 ```
-install the python files from this repository. After copy them into your models/research folder
+install the use_protobuf, and the xml_to_csv, and generate_tfrecord python files from this repository. After copy them into your models/research/object_detection folder
 ```
 git clone https://github.com/ArturK123/TFLite.git
 ```
@@ -96,8 +96,30 @@ mkdir test
 ```
 mkdir train
 ```
-Now transport some of your images with the coresponding .xml files to the test and train folders inside models/research/object_dedection/images
+Now transport some of your images with the coresponding .xml files to the test and train folders inside models/research/object_dedection/images. When you are done run the python xml to csv file in your object detection directory
+```
+cd <complete path>/models/research/object_detection/
+```
 
+```
+python xml_to_csv.py
+```
+
+### Create TFrecord 
+open the generate_tfrecord.py file and change the following lines with your class names and delete any rows if you dont have as much classes
+```
+def class_text_to_int(row_label):
+    if row_label == 'Raspberry_Pi_3':
+        return 1
+    elif row_label == 'Arduino_Nano':
+        return 2
+    elif row_label == 'ESP8266':
+        return 3
+    elif row_label == 'Heltec_ESP32_Lora':
+        return 4
+    else:
+        return None
+```
 
 # Converting TensorFlow Models to TensorFlow Lite
 
