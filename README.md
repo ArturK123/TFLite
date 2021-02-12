@@ -6,9 +6,14 @@ git clone x
 ```
 
 ### Get Prtobuf
-|Release|Link|Platform|
+copy the protobuf executable into your models/releases folder, and delete the rest of protobuf
+
+|Link|Platform|Release|
 |-------|----|--------|
-|14.0| https://github.com/protocolbuffers/protobuf/releases/download/v3.14.0/protoc-3.14.0-osx-x86_64.zip | MacOS
+|https://github.com/protocolbuffers/protobuf/releases/download/v3.14.0/protoc-3.14.0-osx-x86_64.zip | MacOS | 14.0 |
+|https://github.com/protocolbuffers/protobuf/releases/download/v3.14.0/protoc-3.14.0-win64.zip | WIN 64 | 14.0 |
+|https://github.com/protocolbuffers/protobuf/releases/download/v3.14.0/protoc-3.14.0-win32.zip | WIN 32 | 14.0 |
+
 # Converting TensorFlow Models to TensorFlow Lite
 
 ### Go To The Models Directory
