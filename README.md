@@ -107,7 +107,7 @@ python xml_to_csv.py
 
 ### Create TFrecord 
 open the generate_tfrecord.py file and change the following lines with your class names and delete any rows if you dont have as much classes
-```
+```python
 def class_text_to_int(row_label):
     if row_label == 'Raspberry_Pi_3':
         return 1
