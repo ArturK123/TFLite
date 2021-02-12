@@ -129,6 +129,28 @@ python generate_tfrecord.py --csv_input=images/train_labels.csv --image_dir=imag
 python generate_tfrecord.py --csv_input=images/test_labels.csv --image_dir=images/test --output_path=test.record
 ```
 
+## Create the labelmap.bptxt file
+create a labelmap.pbtxt file and add this code to it, but change the classes exactly as before
+```
+item {
+    id: 1
+    name: 'Raspberry_Pi_3'
+}
+item {
+    id: 2
+    name: 'Arduino_Nano'
+}
+item {
+    id: 3
+    name: 'ESP8266'
+}
+item {
+    id: 4
+    name: 'Heltec_ESP32_Lora'
+}
+```
+
+
 # Converting TensorFlow Models to TensorFlow Lite
 
 ### Go To The Models Directory
