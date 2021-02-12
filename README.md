@@ -105,7 +105,7 @@ cd <complete path>/models/research/object_detection/
 python xml_to_csv.py
 ```
 
-### Create TFrecord 
+## Create TFrecord 
 open the generate_tfrecord.py file and change the following lines with your class names and delete any rows if you dont have as much classes
 ```python
 def class_text_to_int(row_label):
@@ -119,6 +119,14 @@ def class_text_to_int(row_label):
         return 4
     else:
         return None
+```
+now get the train.record, and test.record
+```
+python generate_tfrecord.py --csv_input=images/train_labels.csv --image_dir=images/train --output_path=train.record
+```
+
+```
+python generate_tfrecord.py --csv_input=images/test_labels.csv --image_dir=images/test --output_path=test.record
 ```
 
 # Converting TensorFlow Models to TensorFlow Lite
