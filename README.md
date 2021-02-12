@@ -7,7 +7,7 @@ git clone x
 
 ### Get Prtobuf
 |Release|Link|Platform|
-------------------
+|-------|----|--------|
 |14.0| https://github.com/protocolbuffers/protobuf/releases/download/v3.14.0/protoc-3.14.0-osx-x86_64.zip | MacOS
 # Converting TensorFlow Models to TensorFlow Lite
 
