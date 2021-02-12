@@ -74,15 +74,26 @@ Click on the open dir button, and select your image path
   <img src="Screen Shot 2021-02-12 at 6.08.42 PM.png">
 </p>
 Now when you press W you will be able to draw boxes. After you are done labeling all your images make sure your .xml files are inside the same directory as your .png files. Now create a directory
-```cd <complete path>/models/research/object_detection/```
 
-```mkdir images```
+```
+cd <complete path>/models/research/object_detection/
+```
 
-```cd images```
+```
+mkdir images
+```
 
-```mkdir test```
+```
+cd images
+```
 
-```mkdir train```
+```
+mkdir test
+```
+
+```
+mkdir train
+```
 
 
 # Converting TensorFlow Models to TensorFlow Lite
