@@ -2,7 +2,7 @@
 
 ### Install Object Detection Library
 ```
-git clone x
+git clone https://github.com/tensorflow/models.git
 ```
 
 ### Get Prtobuf
