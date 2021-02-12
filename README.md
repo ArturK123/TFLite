@@ -5,7 +5,7 @@ install the TF object detection library
 ```
 git clone https://github.com/tensorflow/models.git
 ```
-install all the needed files. After copy them into your models/research folder
+install the python files from this repository. After copy them into your models/research folder
 ```
 git clone https://github.com/ArturK123/TFLite.git
 ```
@@ -69,10 +69,26 @@ now you should be able to just type, and a new window should open
 ```
 labelimg
 ```
-Click on the open dir button
+Click on the open dir button, and select your image path
 <p align="left">
   <img src="Screen Shot 2021-02-12 at 6.08.42 PM.png">
 </p>
+Now when you press W you will be able to draw boxes. After you are done labeling all your images make sure your .xml files are inside the same directory as your .png files. Now create a directory
+```
+cd <complete path>/models/research/object_detection/
+```
+```
+mkdir images
+```
+```
+cd images
+```
+```
+mkdir test
+```
+```
+mkdir train
+```
 
 
 # Converting TensorFlow Models to TensorFlow Lite
