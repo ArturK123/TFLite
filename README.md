@@ -71,7 +71,7 @@ labelimg
 ```
 Click on the open dir button
 <p align="left">
-  <img src="">
+  <img src="Screen Shot 2021-02-12 at 6.08.42 PM.png">
 </p>
 
 
